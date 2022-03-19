@@ -1,0 +1,216 @@
+/* =========================================================================
+ * Baseline stylings
+============================================================================ */
+
+:root {
+    --dark: #29323f;
+    --light: #58bec2;
+    --light-trans: #58bec2aa;
+    --light-supertrans: #58bec24F;
+}
+
+body {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/* =========================================================================
+ * Styling in Header Container
+============================================================================ */
+
+header {
+    background: var(--dark);
+    display: flex;
+    flex-flow: row nowrap;
+    max-height: 2em;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.75em 0.75em 1.75em 0;
+    position: relative;
+}
+
+.my-name {
+    color: var(--dark);
+    background-color: var(--light);
+    padding: .375rem .625rem .375rem 3.75rem;
+    font-size: 240%;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+ul {
+    text-transform: uppercase;
+    margin-right: 2.5em;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2em;
+    width: fit-content;
+    /* background-color: red; */
+}
+
+ul li a {
+    padding: 1em 1em .25em 1em;
+    color: var(--light);
+    border-bottom: solid var(--light) .25em;
+    transition: 750ms;
+}
+
+ul li a:hover, a:focus {
+    color: var(--dark);
+    background-color: var(--light);
+    border-bottom: solid var(--light) .25em;
+}
+
+/* =========================================================================
+ * Styling for the Image under the header/nav bar
+============================================================================ */
+
+.decorative-splash {
+    position: relative;
+    background-image: url(../img/dimes-border-crop.jpg);
+    background-color: var(--light);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    min-height: 28vh;
+}
+
+.caption {
+    color: var(--dark);
+    position: absolute;
+    padding: 1rem;
+    background-color: var(--light);
+    font-size: 175%;
+    right: 0;
+    bottom: 10%;
+    box-shadow: -0.125em 0.125em .375em var(--dark); 
+}
+
+/* =========================================================================
+ * The main page content
+============================================================================ */
+
+main {
+    margin: 2em 4em 2em 4em;
+}
+
+.section-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.section-card p {
+    line-height: 1.625;
+    font-size: 112%;
+    max-width: 84vw;
+    padding: 0 0 .75rem 1.75rem;
+    color: var(--dark);
+}
+
+h3 {
+    text-align: right;
+    order: -1;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 4vw;
+    width: 16vw;
+    min-width: 40%;
+    color: var(--light);
+    padding-right: .6em;
+    border-right: solid var(--light) .12em;
+}
+
+/* =========================================================================
+ * Just for the photos in the "work" section
+============================================================================ */
+
+.interactive-links {
+    width: 84vw;
+    min-height: 15em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.project-thumbnails {
+    min-width: calc(50% - 1.75em);
+    margin: .875em;
+    min-height: max-content;
+}
+
+#mainstage-photo {
+    flex: 2 1 100%;
+    min-width: max-content;
+    min-height: 30em;
+}
+
+#drawing {
+    background-image: url(../img/drawing.jpg);
+    background-color: var(--light-trans);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+    /* margin: .875em; */
+    border: solid var(--light) .625em;
+    transition: 600ms;
+}
+
+#applescript {
+    background-image: url(../img/applescript.png);
+    background-color: var(--light-trans);
+    background-blend-mode: multiply;
+    background-size: cover;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 7.5em;
+    /* margin: .875em; */
+    border: solid var(--light) .625em;
+    transition: 600ms;
+}
+
+#drawing:hover,
+#applescript:hover {
+    /* background-color: #ffffff00; */
+    background-color: var(--light-supertrans);
+}
+
+/* =========================================================================
+ * Contact information like a faux footer
+============================================================================ */
+
+.contact-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 84vw;
+    font-size: 2vw;
+
+}
+
+.contact-links h4 {
+    color: var(--dark);
+}
+
+.contact-links a {
+    color: var(--dark);
+    padding: 0.25 0 .25rem 0;
+    border-bottom: solid var(--dark) .25em;
+    transition: 750ms;
+}
+
+.contact-links a h4:hover, h4:focus {
+    transition: 750ms;
+    color: var(--light);
+    background-color: var(--dark);
+    border: solid var(--dark) .25em;
+}
+
+#contact-me {
+    align-items: center;
+}

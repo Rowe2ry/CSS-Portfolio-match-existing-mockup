@@ -189,8 +189,21 @@ h3 {
     transition: 600ms;
 }
 
+#refactoring {
+    background-image: url(../img/refactor.png);
+    background-color: var(--light-trans);
+    background-blend-mode: multiply;
+    background-size: cover;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 7.5em;
+    border: solid var(--light) .625em;
+    transition: 600ms;
+}
+
 #drawing:hover,
-#applescript:hover {
+#applescript:hover,
+#refactoring:hover {
     background-color: var(--light-supertrans);
 }
 

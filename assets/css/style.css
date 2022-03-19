@@ -115,7 +115,7 @@ h3 {
     order: -1;
     font-family: 'Roboto', Helvetica, sans-serif;
     font-weight: 500;
-    font-size: 4vw;
+    font-size: 3.75vw;
     width: 16vw;
     min-width: 40%;
     color: var(--light);
@@ -140,6 +140,23 @@ h3 {
     min-width: calc(50% - 1.75em);
     margin: .875em;
     min-height: max-content;
+    position: relative;
+}
+
+.img-captions {
+    color: var(--dark);
+    background-color: var(--light);
+    padding: 0.5vw;
+    position: absolute;
+    left: 0;
+    bottom: 1.5em;
+    text-align: center;
+}
+
+.img-captions h4 {
+    font-size: 150%;
+    padding: o;
+    margin: 0;
 }
 
 #mainstage-photo {
@@ -156,7 +173,6 @@ h3 {
     background-size: cover;
     min-width: 100%;
     min-height: 100%;
-    /* margin: .875em; */
     border: solid var(--light) .625em;
     transition: 600ms;
 }
@@ -169,14 +185,12 @@ h3 {
     min-width: 100%;
     max-width: 100%;
     min-height: 7.5em;
-    /* margin: .875em; */
     border: solid var(--light) .625em;
     transition: 600ms;
 }
 
 #drawing:hover,
 #applescript:hover {
-    /* background-color: #ffffff00; */
     background-color: var(--light-supertrans);
 }
 

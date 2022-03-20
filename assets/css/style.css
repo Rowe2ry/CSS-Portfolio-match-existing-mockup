@@ -228,11 +228,11 @@ h3 {
     color: var(--dark);
     padding: 0.25 0 .25rem 0;
     border-bottom: solid var(--dark) .25em;
-    transition: 750ms;
+    transition: 400ms;
 }
 
 .contact-links a h4:hover, h4:focus {
-    transition: 750ms;
+    transition: 400ms;
     color: var(--light);
     background-color: var(--dark);
     border: solid var(--dark) .25em;

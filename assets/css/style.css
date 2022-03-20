@@ -47,7 +47,6 @@ ul {
     align-items: center;
     gap: 2em;
     width: fit-content;
-    /* background-color: red; */
 }
 
 ul li a {
@@ -217,7 +216,6 @@ h3 {
     align-items: center;
     width: 84vw;
     font-size: 2vw;
-
 }
 
 .contact-links h4 {
@@ -240,4 +238,87 @@ h3 {
 
 #contact-me {
     align-items: center;
+}
+
+/* =========================================================================
+ * Media Query for nav bar starting to crowd
+============================================================================ */
+
+@media screen and (max-width:849px) {
+    
+    header {
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 0.875rem;
+        max-height: 5em;
+    }
+    
+    .my-name {
+        width: 100vw;
+        text-align: center;
+        padding: 0.5rem 1rem;
+        margin: 0 .5rem;
+        font-size: 275%;
+    }
+
+    ul {
+        font-size: 125%;
+        margin-right: 0em;
+    }
+}
+
+/* =========================================================================
+ * Media Query for images becoming too tall and narrow as well as the contact
+ links becoming small and difficult to read.
+============================================================================ */
+
+@media screen and (max-width: 749px) {
+    ul {
+        font-size: 2.695vw;
+    }
+    
+    .section-card {
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.5em;
+    }
+
+    h3 {
+        text-align: center;
+        order: -1;
+        font-size: 5.5vw;
+        width: 50vw;
+        color: var(--dark);
+        padding: .75em;
+        background-color: var(--light);
+        border-radius: 5vh;
+        box-shadow: -0.125em 0.125em .375em var(--dark);
+    }
+
+    #mainstage-photo {
+        flex: 1 1 100%;
+        min-width: max-content;
+        min-height: 15em;
+    }
+    
+    #applescript {
+        min-height: 10em;
+
+    }
+    
+    #refactoring {
+        min-height: 10em;
+    }
+
+    .contact-links {
+        flex-flow: column nowrap;
+        gap: .5em;
+        justify-content: space-between;
+        align-items: center;
+        width: 84vw;
+        font-size: 3.25vw;
+    }
+
 }

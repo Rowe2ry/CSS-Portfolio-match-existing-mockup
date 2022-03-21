@@ -176,8 +176,10 @@ h3 {
     transition: 600ms;
 }
 
-#applescript {
-    background-image: url(../img/applescript.png);
+#applescript,
+#refactoring,
+#digital-art,
+#mitty {
     background-color: var(--light-trans);
     background-blend-mode: multiply;
     background-size: cover;
@@ -186,23 +188,30 @@ h3 {
     min-height: 7.5em;
     border: solid var(--light) .625em;
     transition: 600ms;
+}
+
+#applescript {
+    background-image: url(../img/applescript.png);
 }
 
 #refactoring {
     background-image: url(../img/refactor.png);
-    background-color: var(--light-trans);
-    background-blend-mode: multiply;
-    background-size: cover;
-    min-width: 100%;
-    max-width: 100%;
-    min-height: 7.5em;
-    border: solid var(--light) .625em;
-    transition: 600ms;
 }
+
+#digital-art {
+    background-image: url(../img/DJDV.jpg);
+}
+
+#mitty {
+    background-image: url(../img/Mitty.png);
+}
+
 
 #drawing:hover,
 #applescript:hover,
-#refactoring:hover {
+#refactoring:hover,
+#digital-art:hover,
+#mitty {
     background-color: var(--light-supertrans);
 }
 

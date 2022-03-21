@@ -9,6 +9,7 @@ various levels of alpha trasnparency for hte light color. */
     --light: #58bec2;
     --light-trans: #58bec2aa;
     --light-supertrans: #58bec24F;
+    --my-box-shadow: -0.125em 0.125em .375em var(--dark);
 }
 
 body {
@@ -89,7 +90,7 @@ ul li a:hover, a:focus-visible {
     font-size: 175%;
     right: 0;
     bottom: 10%;
-    box-shadow: -0.125em 0.125em .375em var(--dark); 
+    box-shadow: var(--my-box-shadow); 
 }
 
 /* =========================================================================
@@ -231,6 +232,11 @@ h3 {
  * Contact information like a faux footer
 ============================================================================ */
 
+/* added align-center to override the class alignment */
+#contact-me {
+    align-items: center;
+}
+
 .contact-links {
     display: flex;
     justify-content: space-around;
@@ -247,18 +253,29 @@ h3 {
     color: var(--dark);
     padding: 0.25 0 .25rem 0;
     border-bottom: solid var(--dark) .25em;
+    border-left: solid #fff .25em;
+    border-right: solid #fff .25em;
+    border-top: solid #fff .25em;
     transition: 400ms;
 }
 
-.contact-links a h4:hover, h4:focus {
+/* Added the H4 styling to get the descending character in the
+ * email off of border below
+ */
+h4 {
+    margin-bottom: .125em;
+}
+
+.contact-links a:hover,
+.contact-links a:focus-visible {
     transition: 400ms;
     color: var(--light);
     background-color: var(--dark);
     border: solid var(--dark) .25em;
 }
 
-#contact-me {
-    align-items: center;
+h4:hover, h4:focus-visible {
+    color: inherit;
 }
 
 /* =========================================================================
@@ -290,6 +307,8 @@ h3 {
     
     .contact-links {
         flex-wrap: wrap;
+        font-size: 2.875vw;
+        margin: 2.375em;
     }
 }
 
@@ -319,7 +338,7 @@ h3 {
         padding: .75em;
         background-color: var(--light);
         border-radius: 5vh;
-        box-shadow: -0.125em 0.125em .375em var(--dark);
+        box-shadow: var(--my-box-shadow);
         margin: .75em .5em .5em .5em;
     }
 
@@ -340,11 +359,11 @@ h3 {
 
     .contact-links {
         flex-flow: column nowrap;
-        gap: .5em;
+        gap: 1em;
         justify-content: space-between;
         align-items: center;
         width: 84vw;
-        font-size: 3.25vw;
+        font-size: 3.75vw;
     }
 
 }

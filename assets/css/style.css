@@ -2,6 +2,8 @@
  * Baseline stylings
 ============================================================================ */
 
+/* The variables are all for colors. One dark, and one light as well as 2
+various levels of alpha trasnparency for hte light color. */
 :root {
     --dark: #29323f;
     --light: #58bec2;
@@ -29,6 +31,7 @@ header {
     position: relative;
 }
 
+/* This is the caption box nested in the header. */
 .my-name {
     color: var(--dark);
     background-color: var(--light);
@@ -38,6 +41,7 @@ header {
     text-transform: uppercase;
 }
 
+/* This unordered list serves as the nav bar link container. */
 ul {
     text-transform: uppercase;
     margin-right: 2.5em;
@@ -56,7 +60,7 @@ ul li a {
     transition: 750ms;
 }
 
-ul li a:hover, a:focus {
+ul li a:hover, a:focus-visible {
     color: var(--dark);
     background-color: var(--light);
     border-bottom: solid var(--light) .25em;
@@ -76,6 +80,7 @@ ul li a:hover, a:focus {
     min-height: 28vh;
 }
 
+/* This caption box houses the title for the job I am applying for. */
 .caption {
     color: var(--dark);
     position: absolute;
@@ -91,10 +96,12 @@ ul li a:hover, a:focus {
  * The main page content
 ============================================================================ */
 
+/* just giving the elements on the page room to breathe */
 main {
     margin: 2em 4em 2em 4em;
 }
 
+/* The seciton card class divides up the 3 main navigation sections of the site */
 .section-card {
     display: flex;
     align-items: flex-start;
@@ -109,6 +116,11 @@ main {
     color: var(--dark);
 }
 
+.section-card p em {
+    font-style: italic;
+}
+
+/* The H3 headers are the header levels used to title each section card on the page */
 h3 {
     text-align: right;
     order: -1;
@@ -211,7 +223,7 @@ h3 {
 #applescript:hover,
 #refactoring:hover,
 #digital-art:hover,
-#mitty {
+#mitty:hover {
     background-color: var(--light-supertrans);
 }
 

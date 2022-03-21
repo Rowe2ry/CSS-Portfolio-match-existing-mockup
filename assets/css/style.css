@@ -266,6 +266,10 @@ h3 {
         font-size: 125%;
         margin-right: 0em;
     }
+    
+    .contact-links {
+        flex-wrap: wrap;
+    }
 }
 
 /* =========================================================================
@@ -295,6 +299,7 @@ h3 {
         background-color: var(--light);
         border-radius: 5vh;
         box-shadow: -0.125em 0.125em .375em var(--dark);
+        margin: .375em;
     }
 
     #mainstage-photo {

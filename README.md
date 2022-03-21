@@ -9,7 +9,7 @@ This project is deployed live on my GitHub. You can access it with the following
 
 ## Usage:
 
-This page is a portfolio of some of my current favorite works. At the initial publish time, this portfolio contains artwork, a script I wrote to determine which characters in a given string are part of a hashtag, one refactoring project I have completed, a digital advertisement I constructed, and a Photographic coverage even I did for Mazda USA. As I continue to develop web projects in my journey to becoming a full stack web developer, I intend to update the projects listed here. It should be noted that the styling of this page has been **done in such a way to match a given mockup as part of an assignment** . These colors, layout, and effects are chosen to match a given layout, and are not necessarily representative of my chosen aesthetic (though I do think it all looks quite nice myself).
+This page is a portfolio of some of my current favorite works. At the initial publish time, this portfolio contains artwork, a script I wrote to determine which characters in a given string are part of a hashtag, one refactoring project I have completed, a digital advertisement I created in graphic design software, and a Photographic coverage event I did for Mazda USA. As I continue to develop web projects in my journey to becoming a full stack web developer, I intend to update the projects listed here. It should be noted that the styling of this page has been **done in such a way to match a given mockup as part of a challenge given to me** . These colors, layout, and effects are chosen to match a given layout, and are not necessarily representative of my chosen aesthetic (though I do think it all looks quite nice myself).
 
 ### Project Preview
 
@@ -27,4 +27,4 @@ Pull requests welcome. Feel free to play with the code or leave feedback about t
 
 ## License
 
-This project falls under the Creative Commons License. 
+MIT

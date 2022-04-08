@@ -177,8 +177,8 @@ h3 {
     min-height: 30em;
 }
 
-#drawing {
-    background-image: url(../img/drawing.jpg);
+#getaway {
+    background-image: url(../img/GETAWAY.png);
     background-color: var(--light-trans);
     background-blend-mode: multiply;
     background-position: center;
@@ -189,10 +189,10 @@ h3 {
     transition: 600ms;
 }
 
-#applescript,
+#codeQuiz,
 #refactoring,
-#digital-art,
-#mitty {
+#weatherApp,
+#dayPlanner {
     background-color: var(--light-trans);
     background-blend-mode: multiply;
     background-size: cover;
@@ -203,20 +203,20 @@ h3 {
     transition: 600ms;
 }
 
-#applescript {
-    background-image: url(../img/applescript.png);
+#codeQuiz {
+    background-image: url(../img/CodeQuizScreenshot.png);
 }
 
 #refactoring {
     background-image: url(../img/refactor.png);
 }
 
-#digital-art {
-    background-image: url(../img/DJDV.jpg);
+#weatherApp {
+    background-image: url(../img/WeatherApp-screenshot.png);
 }
 
-#mitty {
-    background-image: url(../img/Mitty.png);
+#dayPlanner {
+    background-image: url(../img/day-planner-screenshot.png);
 }
 
 

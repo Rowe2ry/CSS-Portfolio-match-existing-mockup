@@ -177,8 +177,8 @@ h3 {
     min-height: 30em;
 }
 
-#getaway {
-    background-image: url(../img/GETAWAY.png);
+#overdrive {
+    background-image: url(../img/Overdrive.png);
     background-color: var(--light-trans);
     background-blend-mode: multiply;
     background-position: center;

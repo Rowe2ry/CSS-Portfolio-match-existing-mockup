@@ -190,7 +190,7 @@ h3 {
 }
 
 #codeQuiz,
-#refactoring,
+#getaway,
 #weatherApp,
 #dayPlanner {
     background-color: var(--light-trans);
@@ -207,8 +207,8 @@ h3 {
     background-image: url(../img/CodeQuizScreenshot.png);
 }
 
-#refactoring {
-    background-image: url(../img/refactor.png);
+#getaway {
+    background-image: url(../img/GETAWAY.png);
 }
 
 #weatherApp {
@@ -220,11 +220,11 @@ h3 {
 }
 
 
-#drawing:hover,
-#applescript:hover,
-#refactoring:hover,
-#digital-art:hover,
-#mitty:hover {
+#overdrive:hover,
+#codeQuiz:hover,
+#getaway:hover,
+#weatherApp:hover,
+#dayPlanner:hover {
     background-color: var(--light-supertrans);
 }
 
